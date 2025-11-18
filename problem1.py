@@ -22,3 +22,12 @@ enter a number:4
 ****
 
 """
+
+num = float(input("Enter a  number: "))
+if num > 10 and int(num) == num:
+    print("Your box size is too big. Boxes should be no larger than a size of 10.")
+    num = float(input("Enter a number: "))
+    pass
+num = int(num)
+for i in range (num):
+    print("*" * num)

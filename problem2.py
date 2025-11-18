@@ -37,3 +37,14 @@ example:
 Enter a number: -4
 Invalid input
 """
+
+inputNum = float(input("Enter a number: "))
+factorialNum = 1
+
+if inputNum <= 0 and inputNum.is_integer():
+    print("Invalid input")
+else:
+    inputNum = int(inputNum)
+    for i in range (1,inputNum+1):
+        factorialNum *= i
+    print(f"{inputNum}! is {factorialNum}")

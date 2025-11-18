@@ -17,3 +17,18 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+num = float(input("Enter a number: "))
+strNum = "1"
+total = 0
+
+if num >= 10 or num.is_integer() == False: 
+    print("Invalid number. Ensure your input is an integer that is smaller than 10")
+    num = float(input("Enter a number: "))
+
+num = int(num)
+
+for i in range (1,num+1):
+    abcd = int(strNum * i)
+    total += abcd
+print(f"The sum of the series is {total}")

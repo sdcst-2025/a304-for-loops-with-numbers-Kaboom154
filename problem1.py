@@ -31,3 +31,4 @@ if num > 10 and int(num) == num:
 num = int(num)
 for i in range (num):
     print("*" * num)
+    

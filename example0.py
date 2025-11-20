@@ -12,4 +12,3 @@ end = time.time()
 elapsedTime = end - start
 print(f"The final value of x is {x}")
 print(f"It took {elapsedTime} seconds to count from 0 to 2 million")
-

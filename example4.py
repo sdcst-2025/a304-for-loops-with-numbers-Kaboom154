@@ -20,4 +20,3 @@ Things to think about:
 Why did we add 1 to i in line 12?
 What is happening in line 15?
 """
-

@@ -23,3 +23,21 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+
+time = int(input("Number of months: ")) +1
+
+totalBalance = 0
+
+for i in range(1, time):
+    purchases = float(input(f"Enter total purchases for month {i}: "))
+    payments = float(input(f"Enter total payments for month {i}: "))
+
+    unpayed = purchases - payments
+    if unpayed > 0:
+        interest = round(unpayed * 0.02,2)
+        print(f"2% interest has been charged: {interest}")
+        balance = unpayed + interest
+    else:
+        balance = unpayed
+    totalBalance += balance
+    print(f"Your closing balance is ${totalBalance}")

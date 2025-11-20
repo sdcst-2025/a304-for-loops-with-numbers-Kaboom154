@@ -48,3 +48,4 @@ else:
     for i in range (1,inputNum+1):
         factorialNum *= i
     print(f"{inputNum}! is {factorialNum}")
+    
